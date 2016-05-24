@@ -10,12 +10,67 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
  */
  
+ 
+// MDB Framework //
 
+@import 'bootstrap';
+@import 'style';
+@import 'mdb';
 
-@import "bootstrap";
-@import "mdb";
-@import "style";
+@import 'mdb_sass/mdb.scss';
+
+// Mixins
+@import "mdb_sass/mdb/free/data/prefixer";
+@import "mdb_sass/mdb/free/data/mixins";
+
+// Variables
+@import "mdb_sass/mdb/free/data/colors"; 
+@import "mdb_sass/mdb/free/data/variables-b4";
+@import "mdb_sass/mdb/free/data/variables";  
+
+//Global
+@import "mdb_sass/mdb/free/global"; 
+  
+// MDB Free  
+@import "mdb_sass/mdb/free/roboto"; 
+@import "mdb_sass/mdb/free/typography";
+@import "mdb_sass/mdb/free/animations";
+@import "mdb_sass/mdb/free/waves";
+@import "mdb_sass/mdb/free/helpers";
+// @import "mdb_sass/mdb/free/buttons";  
+@import "mdb_sass/mdb/free/forms-basic";
+@import "mdb_sass/mdb/free/cards-basic";  
+@import "mdb_sass/mdb/free/navbars";  
+@import "mdb_sass/mdb/free/hover-effects";  
+@import "mdb_sass/mdb/free/footer";  
+@import "mdb_sass/mdb/free/carousels-basic"; 
+ 
+// MDB Premium  
+@import "mdb_sass/mdb/pro/forms-pro"; 
+@import "mdb_sass/mdb/pro/tabs"; 
+@import "mdb_sass/mdb/pro/progress"; 
+@import "mdb_sass/mdb/pro/accordion"; 
+@import "mdb_sass/mdb/pro/buttons-pro"; 
+@import "mdb_sass/mdb/pro/social-buttons"; 
+@import "mdb_sass/mdb/pro/cards-pro";  
+@import "mdb_sass/mdb/pro/dropdowns-pro";  
+@import "mdb_sass/mdb/pro/light-box";  
+@import "mdb_sass/mdb/pro/side-nav"; 
+@import "mdb_sass/mdb/pro/navbars-pro";  
+@import "mdb_sass/mdb/pro/carousels-pro";  
+@import "mdb_sass/mdb/pro/modals-pro";   
+@import "mdb_sass/mdb/pro/toasts"; 
+@import "mdb_sass/mdb/pro/scrollspy";   
+@import "mdb_sass/mdb/pro/charts-pro";   
+
+// SETS
+@import "mdb_sass/mdb/pro/ecommerce";   
+@import "mdb_sass/mdb/pro/blog";   
+
+// DATE & TIME PICKERS
+@import "mdb_sass/mdb/pro/date_picker/default.scss";
+@import "mdb_sass/mdb/pro/date_picker/default.date.scss";
+@import "mdb_sass/mdb/pro/date_picker/default.time.scss";  
