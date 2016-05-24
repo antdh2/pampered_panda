@@ -18,6 +18,13 @@ body,
     color: #000;
 }
 
+.jumbotron {
+    background-color: #E040FB !important;
+    color: #fff;
+    position: relative;
+    z-index:-1;
+}
+
 .social-counters {
     padding-top: 15px;
 }
@@ -42,6 +49,10 @@ body,
 
 .top-nav-collapse {
     background-color: #1C2331;
+}
+
+.boxshadow {
+    box-shadow: 0 1em 5em 0.1em #000 !important;
 }
 
 @media only screen and (max-width: 768px) {
