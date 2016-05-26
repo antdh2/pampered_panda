@@ -1,0 +1,38 @@
+<%= form_for(@venue) do |f| %>
+  <% if @venue.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@venue.errors.count, "error") %> prohibited this venue from being saved:</h2>
+
+      <ul>
+      <% @venue.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.text_field :venue_name, placeholder: "Venue Name" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :venue_addr1, placeholder: "Address Line 1" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :venue_addr2, placeholder: "Address Line 2" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :venue_town, placeholder: "Town" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :venue_city, placeholder: "City" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :venue_postcode, placeholder: "Postcode" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :venue_paypal_email, placeholder: "PayPal e-mail address" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
