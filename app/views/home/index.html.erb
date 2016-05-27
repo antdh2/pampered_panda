@@ -1,49 +1,15 @@
-    <!--Mask-->
-    <div class="view hm-light-strong">
-        <div class="full-bg-img flex-center">
-            <div class="col-md-6">
-                <ul>
-                    <li>
-                        <!--Featured Image-->
-<div class="view overlay hm-white-slight z-depth-2">
-    <%= link_to image_tag("panda2.jpg", border: 0, class: "img-fluid") %>
-    <a>
-        <div class="mask"></div>
-    </a>
+<div class="row">
+  <div class="container">
+    <h1 align="center">Welcome to Pampered Panda</h1>
+    
+    <ul>
+        <li><%= link_to "Register new venue", new_venue_path %></li>
+        <li><%= link_to "Show all venues", venues_path %></li>
+    </ul>
+    
+    <div class="center">
+        <%= link_to "logout", destroy_user_session_path, method: :delete %>
+    </div>
+   </div>
 </div>
 
-<!--Post data-->
-<div class="jumbotron m-1 text-xs-center boxshadow">
-    <h2 class="h2-responsive">Pampered Panda</h2>
-    <hr>
-    <p>Coming soon</p>
-
-    <!--Social shares-->
-    <div class="social-counters">
-
-        <!--Facebook-->
-        <a class="btn btn-fb" href="https://www.facebook.com/Pamperedpanda" target="_blank">
-            <i class="fa fa-facebook left"></i>
-            <span class="hidden-md-down">Facebook</span>
-        </a>
-        <span class="counter">7</span>
-
-        <!--Twitter-->
-        <a class="btn btn-tw" href="https://twitter.com/pampered_panda" target="_blank">
-            <i class="fa fa-twitter left"></i>
-            <span class="hidden-md-down">Twitter</span>
-        </a>
-        <span class="counter">13</span>
-
-
-    </div>
-    <!--/.Social shares-->
-
-</div>
-<!--/.Post data-->
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--/.Mask-->

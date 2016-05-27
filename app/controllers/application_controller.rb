@@ -4,5 +4,5 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
   # to force user login if needed
-  # before_action :authenticate_user!
+  before_action :authenticate_user!
 end
